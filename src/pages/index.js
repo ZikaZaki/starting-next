@@ -5,10 +5,6 @@ import PokemonInfo from "../components/PokemonInfo";
 import PokemonFilter from "../components/PokemonFilter";
 import PokemonTable from "../components/PokemonTable";
 
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
 const Title = styled.h1`
   text-align: center;
 `;
@@ -18,9 +14,12 @@ const TwoColumnLayout = styled.div`
   grid-column-gap: 1rem;
 `;
 const PageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   margin: auto;
-  width: 800;
-  padding: 1rem;
+  width: 100%;
+  padding: 1rem 2rem;
 `;
 
 export default function Home() {

@@ -35,8 +35,11 @@ class Store {
 
 const store = new Store();
 
-fetch("http://localhost:3000/starting-react/pokemon.json")
-    .then((resp) => resp.json())
-    .then((pokemon) => store.setPokemon(pokemon));
+if(typeof window !== "undefined") {
+    fetch("/pokemon.json")
+        .then((resp) => resp.json())
+        .then((pokemon) => store.setPokemon(pokemon));
+}
+
 
 export default store;

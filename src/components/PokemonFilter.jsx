@@ -6,6 +6,7 @@ import store  from "../store";
 
 const Input = styled.input`
   width: 100%;
+  border: 1px solid #ccc;
   font-size: x-large;
   padding: 0.2rem;
 `;
